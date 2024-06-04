@@ -13,7 +13,7 @@ from nltk.tokenize import word_tokenize
 from nltk.stem.wordnet import WordNetLemmatizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-product_vectorizer = pickle.load(open(os.path.join(settings.BASE_DIR, "./web_learn/data/product_vectorizer.pickle"), "rb"))
+#product_vectorizer = pickle.load(open(os.path.join(settings.BASE_DIR, "./web_learn/data/product_vectorizer.pickle"), "rb"))
 product_matriz = pickle.load(open(os.path.join(settings.BASE_DIR, "./web_learn/data/product_matriz.pickle"), "rb"))
 system_recomend = pickle.load(open(os.path.join(settings.BASE_DIR, "./web_learn/data/productos_nombre.pickle"), "rb"))
 

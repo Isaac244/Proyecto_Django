@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 class Producto(models.Model):
     prod = models.CharField(
+        verbose_name="Producto",
         blank=False,
         max_length=255,
     )
@@ -10,8 +11,8 @@ class Producto(models.Model):
         auto_now_add=True
     )
 
-    #def __str__(self):
-        #return self.prod
+    def __str__(self):
+        return str(self.prod)
     
 class ProductRecomender(models.Model):
     producto = models.ForeignKey(

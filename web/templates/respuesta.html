@@ -16,14 +16,15 @@
 
             <table class="table">
               <thead>
-                <tr>
+                <!--<tr>
                   <th scope="col">Productos</th>
-                </tr>
+                </tr> -->
               </thead>
               <tbody>
                 {% for match in matches %}
                 <tr>
-                  <td>Producto {{ forloop.counter }}: {{ match.position }}</td>
+                  <!--<td>Producto {{ forloop.counter }}: {{ match.position }}</td>-->
+                  <td> Producto {{ forloop.counter }}: {{match.position}} </td>
                 </tr>
                 {% endfor %}
               </tbody>
